@@ -29,6 +29,8 @@
   #define NEOPIXEL_PIN                      PC7   // LED driving pin
 #endif
 
+#define CASE_LIGHT_PIN                     PC7    // Ariel: Use NEOPIXEL pin to turn on/off case lights
+
 /**
  * TMC2208/TMC2209 stepper drivers
  */

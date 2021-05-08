@@ -111,7 +111,9 @@
     void menu_case_light() {
       START_MENU();
       BACK_ITEM(MSG_CONFIGURATION);
+      #if DISABLED(CASE_LIGHT_NO_PWM)
       EDIT_ITEM(percent, MSG_CASE_LIGHT_BRIGHTNESS, &caselight.brightness, 0, 255, caselight.update_brightness, true);
+      #endif
       CASELIGHT_TOGGLE_ITEM();
       END_MENU();
     }

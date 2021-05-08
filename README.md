@@ -1,3 +1,9 @@
+#Read Me
+Looks like probe fade height and heat bed PID are not initialized after flash.
+Use the following after flash:
+M420 s0 z0
+M304 P50.71 I9.88 D73.43
+
 # Marlin 3D Printer Firmware
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
